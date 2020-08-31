@@ -127,7 +127,7 @@ If you set any values, they will not be asked in the install page on first run. 
 
 If you want, you can set the data directory, otherwise default value will be used.
 
-- `NEXTCLOUD_DATA_DIR` (default: _/var/www/html/data_) Configures the data directory where nextcloud stores all files from the users.
+- `NEXTCLOUD_DATA_DIR` (default: _/var/www/html/data_) Configures the data directory where nextcloud stores all files from the users. Must be writeable by the `www-data` user, i.e. `/var/www/data` will work, `/data` will not.
 
 One or more trusted domains can be set through environment variable, too. They will be added to the configuration after install.
 
